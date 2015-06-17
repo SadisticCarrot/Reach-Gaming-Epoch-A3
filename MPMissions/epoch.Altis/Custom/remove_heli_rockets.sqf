@@ -1,0 +1,2 @@
+{ if (typeOf _x == "B_Heli_Light_01_armed_F") then { _x removeWeaponGlobal "missiles_DAR"; }; } forEach vehicles;
+{ if (typeOf _x == "I_Heli_Light_02_F") then { _x removeWeaponGlobal "missiles_DAGR"; }; } forEach vehicles
