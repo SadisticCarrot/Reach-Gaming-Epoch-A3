@@ -1,5 +1,5 @@
 
-// Add this at the top of your Init.sqf
+// Start Ai Mission
 #include "start_blck.sqf";
 //If server execute this script
 if (isServer) then {
@@ -25,13 +25,14 @@ call compile preProcessFileLineNumbers "cmEarplugs\config.sqf";
 
 //cmEARPLUGS CODE END
 //////////////////////////////////////////////////////////////////////////
+//Start safe Zones
 [] execVM "scripts\safezone.sqf";
 
-	//Debug pic
+//Debug pic
 execVM "DebugPic.sqf";
-//
+//Remove Rockets
 execVM "custom\remove_heli_rockets.sqf";
-//
+//Custom Kill Stream
 [] execVM "addons\messages\init.sqf";
-//add this to the bottom of your init.sqf
+//Igi Load start
 []execVM "IgiLoad\IgiLoadInit.sqf";
